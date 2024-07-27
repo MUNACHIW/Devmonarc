@@ -6,7 +6,7 @@ function Post(){
     const handleSubmit = async (event) =>{
         event.preventDefault();
         try{
-            const response = await axios.post('http://localhost:5000/api/blogpost', {title, post});
+            const response = await axios.post('https://backendportfolio-0tqd.onrender.com/api/blogpost', {title, post});
             if (response.data.message == "It seems admin is not signed up"){
                window.location.href = '/admin'
              }
