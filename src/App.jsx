@@ -27,13 +27,13 @@ function App() {
              <Route path='/admin' element={<Admin/>}></Route>
              <Route path='/post' element={<Post/>}></Route>
              <Route path='/signin' element={<Signin/>}></Route>
-             {/* <Route path="*" element={<NotFound />} /> Add this route */}
+             <Route path="*" element={<NotFound />} /> {/* Add this route */}
               <Route path="/projects" element={<Projects/>} />
              <Route path="/blog" element={<Blog/>} />
              <Route path="/recommendations" element={<Recommendations/>} />
              <Route path="/blog/:id" element={<BlogDetails/>} />
              <Route path='/blog/notfound' element={<Blognotfound/>} ></Route>
-             {/* <Route path='blog?page=id' element={<Blog/>}></Route> */}
+
          </Routes>
        </Router>
     </>
