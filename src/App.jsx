@@ -23,7 +23,7 @@ function App() {
         <Router>
          <Routes>
                        
-             <Route path='/DevMonarch/' element={<App2/>}></Route>
+             <Route path='/DevMonarch' element={<App2/>}></Route>
              <Route path='/admin' element={<Admin/>}></Route>
              <Route path='/post' element={<Post/>}></Route>
              <Route path='/signin' element={<Signin/>}></Route>
