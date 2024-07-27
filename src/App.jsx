@@ -8,7 +8,6 @@ import Preloader from './Components/Preloader.jsx'
 import Admin from './Components/Admin.jsx'
 import Post from './Components/Post.jsx'
 import App2 from './Components/App2.jsx'
-import NotFound from './Components/Notfound.jsx'
 import Signin from './Components/Signin.jsx'
 import Projects from './Components/Projects.jsx'
 import Blog from './Components/Blog.jsx'
@@ -27,7 +26,6 @@ function App() {
              <Route path='/admin' element={<Admin/>}></Route>
              <Route path='/post' element={<Post/>}></Route>
              <Route path='/signin' element={<Signin/>}></Route>
-             <Route path="*" element={<NotFound />} /> {/* Add this route */}
               <Route path="/projects" element={<Projects/>} />
              <Route path="/blog" element={<Blog/>} />
              <Route path="/recommendations" element={<Recommendations/>} />
