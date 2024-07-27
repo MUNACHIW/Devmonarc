@@ -23,11 +23,11 @@ function App() {
         <Router>
          <Routes>
                        
-             <Route path='/DevMonarch' element={<App2/>}></Route>
+             <Route path='/' element={<App2/>}></Route>
              <Route path='/admin' element={<Admin/>}></Route>
              <Route path='/post' element={<Post/>}></Route>
              <Route path='/signin' element={<Signin/>}></Route>
-             <Route path="*" element={<NotFound />} /> {/* Add this route */}
+             {/* <Route path="*" element={<NotFound />} /> Add this route */}
               <Route path="/projects" element={<Projects/>} />
              <Route path="/blog" element={<Blog/>} />
              <Route path="/recommendations" element={<Recommendations/>} />
