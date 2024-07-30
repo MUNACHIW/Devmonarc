@@ -79,7 +79,6 @@ function Recommendations(){
           <ul>
           <li><NavLink to="/" >Home</NavLink></li>
           <li><NavLink to="/projects">Projects</NavLink></li>
-          <li><NavLink to="/services">Services</NavLink></li>
           <li><NavLink to="/blog">Blog</NavLink></li>
           <li><NavLink to="/recommendations">Recommendations</NavLink></li>
             <div className="btnholder">

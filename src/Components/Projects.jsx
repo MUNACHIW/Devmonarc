@@ -6,6 +6,7 @@ import videoBG from '/src/assets/pexels-pavel-danilyuk-5495890 (1080p).mp4';
 import cv from '/public/Resume.pdf';
 import { NavLink } from 'react-router-dom'; 
 import Footer from './Footer.jsx';
+import image from '/src/assets/3d-internet-secuirty-badge.jpg'
 AOS.init()
 function Projects(){
     // const [navbackground, setNavBackground] = useState(false);
@@ -79,7 +80,6 @@ function Projects(){
           <ul>
           <li><NavLink to="/" >Home</NavLink></li>
           <li><NavLink to="/projects">Projects</NavLink></li>
-          <li><NavLink to="/services">Services</NavLink></li>
           <li><NavLink to="/blog">Blog</NavLink></li>
           <li><NavLink to="/recommendations">Recommendations</NavLink></li>
             <div className="btnholder">
@@ -109,7 +109,7 @@ function Projects(){
       </header>
       <section className='Cardholder'>
         <div data-aos="fade-right">
-            <iframe src="https://scrapemuna.onrender.com/" ></iframe>
+            <img src={image} alt="net" />
             <h1>Scrapemuna</h1>
             <p>
               One of my side projects I thought of using to
@@ -122,7 +122,7 @@ function Projects(){
     
 
         <div data-aos="fade-left">
-        <iframe src="https://munachiw.github.io/MaxiAI/"></iframe>
+        <img src={image} alt="net" />
             <h1>MaxiAI</h1>
             <p>
               This is one of my side hustles where I was set to build a
@@ -133,7 +133,7 @@ function Projects(){
          </div>
   
         <div data-aos="fade-right">
-        <iframe src="https://munachiw.github.io"></iframe>
+        <img src={image} alt="net" />
             <h1>Simplewebsite build</h1>
             <p>
               Just practicing my skill in html and css  with vanilla javascript building a website
@@ -142,7 +142,7 @@ function Projects(){
          </div>
 
         <div data-aos="fade-left">
-        <iframe src="https://www.chair-saver.com/"></iframe>
+        <img src={image} alt="net" />
             <h1>ChairServer</h1>
             <p>
               I will build a website like this for any of your business
@@ -152,7 +152,7 @@ function Projects(){
          </div>
 
         <div data-aos="fade-right">
-        <iframe src="https://www.applebees.com/en/"></iframe>
+        <img src={image} alt="net" />
             <h1>AppleBees</h1>
             <p>
             I could build you a web app or site like this its just a contact away
@@ -162,7 +162,7 @@ function Projects(){
 
 
         <div data-aos="fade-left">
-        <iframe src="http://pillars.com/"></iframe>
+        <img src={image} alt="net" />
             <h1>Pillars</h1>
             <p>
             I could build you a web app or site like this its just a contact away
@@ -172,7 +172,7 @@ function Projects(){
 
 
         <div data-aos="fade-right">
-        <iframe src="https://applewaves.com/"></iframe>
+        <img src={image} alt="net" />
             <h1>Applewaves</h1>
             <p>
             I could build you a web app or site like this its just a contact away
@@ -182,7 +182,7 @@ function Projects(){
       
  
         <div data-aos="fade-left">
-        <iframe src="https://www.apple.com/watch/"></iframe>
+        <img src={image} alt="net" />
             <h1>Apple</h1>
             <p>
              I contributed in the frontend and Backend of this web App
@@ -192,7 +192,7 @@ function Projects(){
 
  
         <div data-aos="fade-right">
-        <iframe src="https://play.google.com/store/apps/details?id=com.app.villafragrancesb"></iframe>
+        <img src={image} alt="net" />
             <h1>Mobile App Development</h1>
             <p>
             I could build you a mobile app  like this its just a contact away
