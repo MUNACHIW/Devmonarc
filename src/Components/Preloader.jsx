@@ -8,7 +8,7 @@ const Preloader = () =>{
  window.addEventListener('load', function(){
     setTimeout(()=>{
        setdisplay(false)
-    }, 2000)
+    }, 1000)
  })
 
 return(
