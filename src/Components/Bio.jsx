@@ -1,4 +1,4 @@
-import image from '/src/assets/IMG_20240311_193448_2 (1).jpg'
+import image from '/src/assets/muna.jpg'
 import cv from '/src/assets/Staci Washington Resume [2024].docx.pdf';
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 import AOS from 'aos';
@@ -27,7 +27,7 @@ function Bio(){
     
    
      <div className="cube" data-aos="fade-right">
-         <img src={image2} alt="network error or incompatible" />
+         <img src={image} alt="network error or incompatible" />
      </div>
      <section className='subsec2' data-aos="zoom-out-up">
       <div className='imgholder'>
