@@ -3,7 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import videoBG from '/src/assets/pexels-pavel-danilyuk-5495890 (1080p).mp4';
-import cv from '/src/assets/Staci Washington Resume [2024].docx.pdf';
 import { NavLink } from 'react-router-dom'; 
 import Client from './Client.jsx';
 import Footer from './Footer.jsx';

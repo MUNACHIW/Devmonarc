@@ -1,8 +1,8 @@
 import image from '/src/assets/muna.jpg'
-import cv from '/src/assets/Staci Washington Resume [2024].docx.pdf';
+import cv from '/public/Resume.pdf';
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 import AOS from 'aos';
-import image2 from '/src/assets/blogprofile.jpg'
+import image2 from '/src/assets/muna.jpg'
 AOS.init()
 function Bio(){
   return(

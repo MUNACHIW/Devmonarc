@@ -4,13 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import videoBG from '/src/assets/pexels-pavel-danilyuk-5495890 (1080p).mp4';
-import cv from '/src/assets/Staci Washington Resume [2024].docx.pdf';
 import { NavLink } from 'react-router-dom'; 
-import NotFound from './Notfound.jsx';
 import image  from '/src/assets/monarch.jpg';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer.jsx';
-import image2 from '/src/assets/blogprofile.jpg'
+import image2 from '/src/assets/muna.jpg'
 
 const BlogDetails = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
