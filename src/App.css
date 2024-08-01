@@ -65,7 +65,7 @@ header{
   height: auto;
   padding-bottom: 40px;
   background-size: cover;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header section{
   -webkit-backdrop-filter: blur(5px);
@@ -412,6 +412,7 @@ background: transparent;
  margin-right:40px;
  border-radius: 10px;
  color:white;
+ padding: 6px;
 }
 
 .bio .subsec1:hover{
@@ -423,8 +424,7 @@ background: transparent;
 .bio .subsec1 p{
   line-height: 25px;
   margin-left: 20px;
-  letter-spacing: 1px;
-  text-wrap: wrap;
+
 }
 .bio .subsec1 a{
   text-decoration: none;
@@ -475,7 +475,6 @@ background: transparent;
   -webkit-backdrop-filter: blur(5px);
   width:90%;
   height:auto;
-  padding: 10px;
   border-radius: 10px;
   color:white;
 }
@@ -502,6 +501,7 @@ background: transparent;
 }
 .bio .subsec2 .imgholder{
   width:100%;
+  overflow:hidden ;
 }
 .bio .subsec2 .imgholder img{
   width:100%;
@@ -679,6 +679,7 @@ justify-content: flex-start;
   display: flex;
   align-items:center ;
   justify-content: center;
+  overflow: hidden;
 }
 .gateway div{
   width: 45%;
@@ -704,7 +705,8 @@ justify-content: flex-start;
 .gateway div h1{
   color: white;
   font-size: 40px;
-  line-height: 60px;
+  margin: 10px 0px;
+  overflow: hidden;
 }
 .gateway div p{
   color: white;
@@ -780,6 +782,7 @@ justify-content: flex-start;
   align-items: center;
   justify-content: space-evenly;
   padding: 15px;
+  overflow: hidden;
 }
 .deal div{
   width: 30%;
@@ -861,8 +864,9 @@ footer{
   color: white;
   font-weight: lighter;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
 }
 footer .imgholder{
   width: 45%;
@@ -883,7 +887,7 @@ footer p{
 }
 footer h1{
   font-weight: lighter;
-  font-size: 45px   ;
+  font-size: 40px   ;
   margin: 20px;
 }
 footer .btnholder{
@@ -917,8 +921,7 @@ footer .btnholder a:hover {
   }
   footer h1{
     width: 100%;
-    text-wrap: nowrap;
-    font-size: 35px;
+    font-size: 28px;
 
   }
   footer p{
@@ -1133,4 +1136,16 @@ margin: 8px;
 }
 .pageactive{
   background: linear-gradient(to right, rgb(15, 122, 65), #c7c6c66a);
+}
+.preloader2{
+  background-color: #000;
+  /* background:#37517E url(/Images/preloader.gif) no-repeat center center; */
+  width:100%;
+  height: 100%;
+  position: fixed;
+  /* background-size: 20%; */
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,5 +1,5 @@
 import image from '/src/assets/preloader.gif'
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 const Preloader = () =>{
  const [display , setdisplay] = useState(true)
 

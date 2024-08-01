@@ -88,7 +88,6 @@ function Header() {
         <ul>
         <li><NavLink to="/" >Home</NavLink></li>
           <li><NavLink to="/projects">Projects</NavLink></li>
-          <li></li>
           <li><NavLink to="/blog">Blog</NavLink></li>
           <li><NavLink to="/recommendations">Recommendations</NavLink></li>
           <div className="btnholder">

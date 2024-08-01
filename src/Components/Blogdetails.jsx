@@ -53,7 +53,7 @@ const BlogDetails = () => {
  const navigate = useNavigate();
  const fetchBlog2 = async () =>{
   try{
-    const response = await fetch('http://127.0.0.1:5000/api/blogload')
+    const response = await fetch('https://backendportfolio-0tqd.onrender.com/api/blogload')
     if (!response.ok){
       throw new Error('Network response was not ok')
     }
@@ -81,7 +81,14 @@ const BlogDetails = () => {
  
  
  
-  fetchBlog2()
+  fetchBlog2().then(
+    ()=>{
+      const loadingSpinner = document.getElementById('loadingSpinner');
+          if (loadingSpinner) {
+              loadingSpinner.style.display = 'none';
+          }
+    }
+  );
  }, [search]);
  const toggleMenu = () => {
   setIsMenuOpen(!isMenuOpen);
@@ -200,11 +207,17 @@ const handleSearchSubmit = (event) => {
  
   <main className='blogdetails'>
     <section>
+    <strong id="loadingSpinner">
+           <div className="loading-spinner" id="loadingSpinner">
+        </div>
+        <p>Loading...</p>
+        </strong>
           {blog.map((blog) => (
 
               <div className="blog" >
                 <div className="adminit">
-                 <img src={image2} alt="" />     <p key={blog.id}>By Admin(Mr Covenant) {blog.created_at}  </p>
+
+                <strong className='imageholder2'> <img src={image2} alt="" /> </strong>    <p key={blog.id}>By Admin(Mr Covenant) {blog.created_at}  </p>
                 </div>            
                 <h1 key={blog.id}>{blog.title}</h1>
                 <img key={blog.id} src={image} alt="Network error or browser not compatible" />

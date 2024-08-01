@@ -9,9 +9,8 @@ function Bio(){
    <main className="bio"> 
          <div className="subsec1"  data-aos="zoom-in-up">
            <h1>Full-Stack developer</h1>
-           <p>Proficient with Frontend and backend Technologies with 4 years of experience </p>
-           <p>
-            Dedicated to provide you with quality web applications, websites,<br></br> backend integrations  and mobile Apps
+           <p>Proficient with Frontend and backend Technologies with 4 years of experience 
+            Dedicated to provide you with quality web applications, websites,backend integrations  and mobile Apps
            </p>
            <a
           href={cv}

@@ -308,6 +308,7 @@ header main video{
     flex-direction: row !important;
     justify-content: flex-start;
     padding: 10px;
+    flex-wrap: wrap;
 }
 .adminit img{
     height: 60px !important;
@@ -318,4 +319,42 @@ header main video{
     background-attachment: red;
     width: 60%;
     height: 40vh    ;
+}
+/* Example styles for the loading spinner */
+.loading-spinner {
+    width: 40px !important;
+    height: 40px !important;
+    /* background: #007bff !important; */
+    border: 8px solid green;
+    border-top: 4px solid green; /* Change the color as desired */
+    border-radius: 100%;
+    animation: spin 1s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999 !important;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.imageholder2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:60px !important;
+    height:60px !important;
+    overflow: hidden !important;
+    border-radius: 100% !important;
+}
+.imageholder2  img{
+    width: 100% !important;
+    height: 100% !important;
+    height: auto !important;
+}
+@media screen and (max-width:480px) {
+    .imageholder2{
+        width: 100%;
+    }
 }

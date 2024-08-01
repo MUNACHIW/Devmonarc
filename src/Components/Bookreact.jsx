@@ -6,7 +6,7 @@ function Bookreact(){
 
     return(
         <footer  data-aos='fade-up' >
-            <h1  data-aos='fade-up'>Book Your One-On-One<br></br>Design Experience</h1>
+            <h1>Book Your One-On-One<br></br>Design Experience</h1>
             <p  data-aos='fade-up'>
                 Transform  Your Mobile Apps with a personalised touch.
                 my one-on-one design session and consultation offers access to exclusive User Experience and design 

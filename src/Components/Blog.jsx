@@ -31,10 +31,16 @@ function Blog(){
       const data = await response.json();
       setBlogs(data.blogs)
     }   
-  
-    useEffect(()=>{
-      fetchAPI(page || currentPage); 
-    } , [page, currentPage])
+    useEffect(() => {
+      // Simulate fetching data (replace with your actual API call)
+      fetchAPI(page || currentPage).then(() => {
+          // Hide the loading spinner when data is loaded
+          const loadingSpinner = document.getElementById('loadingSpinner');
+          if (loadingSpinner) {
+              loadingSpinner.style.display = 'none';
+          }
+      });
+  }, [page, currentPage]);
     const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
     };
@@ -65,7 +71,7 @@ function Blog(){
   const totalPages = Math.ceil(blogs.length / itemsPerPage);
     return(
       <>
-      <header>
+        <header>
         <nav className='navactive'>
           <svg>
             <text  x="40%" y="50%" dy=".35em" text-anchor="middle" className="logo">
@@ -145,14 +151,24 @@ function Blog(){
         </div>
         </div>
     </header> 
+   
       <main className="blogload">
+        <strong id="loadingSpinner">
+           <div className="loading-spinner" id="loadingSpinner">
+        </div>
+        <p>Loading...</p>
+        </strong>
+        
+
+
                 {blogs.map((blog) => (
-          
-                    <div className="">
                     
+                    <div className="">
+                   
                       <img src={image} alt="Network error or browser not compatible" />
+                  
                       <h1>{blog.title}</h1>
-                      <span><img className='imgprof' src={image2} />Posted at: {blog.created_at}<br></br>By Admin(Mr Covenant)</span>
+                      <span> <img className='imgprof' src={image2} />Posted at: {blog.created_at}<br></br>By Admin(Mr Covenant)</span>
                       <a href={`/blog/${blog.id}`} key={blog.id}>ReadBlog <i className='bi bi-eye'></i></a>
                     </div>
                 ))} 
@@ -186,3 +202,4 @@ function Blog(){
 }
 export default Blog;
  
+    
