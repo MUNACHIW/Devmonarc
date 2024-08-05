@@ -205,7 +205,7 @@ const handleSearchSubmit = (event) => {
   </div>
 </header>
  
-  <main className='blogdetails'>
+  <article className='blogdetails'>
     <section>
     <strong id="loadingSpinner">
            <div className="loading-spinner" id="loadingSpinner">
@@ -242,7 +242,7 @@ const handleSearchSubmit = (event) => {
 </section>
 
         
-</main>
+</article>
 <Footer/>
 </>
  )

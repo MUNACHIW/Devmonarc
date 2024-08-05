@@ -152,7 +152,7 @@ function Blog(){
         </div>
     </header> 
    
-      <main className="blogload">
+      <article className="blogload">
         <strong id="loadingSpinner">
            <div className="loading-spinner" id="loadingSpinner">
         </div>
@@ -195,7 +195,7 @@ function Blog(){
                    {/* <a   onClick={decrement}>Previous</a>
                    <a onClick={increment} >Next</a> */}
             </div>
-       </main>
+       </article>
       <Footer/>
     </>
     )

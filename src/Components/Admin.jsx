@@ -10,7 +10,16 @@ function Admin() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('https://backendportfolio-0tqd.onrender.com/api/check', { name, password });
+            const response = await axios.post(
+                'https://backendportfolio-0tqd.onrender.com/api/check',
+                { name, password },
+                {
+                    headers: {
+                        'Content-Type': 'application/json', // Set the content type
+                        // Add any other headers you need (e.g., authorization token)
+                    },
+                }
+            );
             if (response.status === 200) {
                 // Redirect to /post if authorized
                 window.location.href = '/signin';
